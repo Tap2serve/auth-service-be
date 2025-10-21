@@ -1,0 +1,59 @@
+#It keeps your Docker image lightweight and secure by excluding unnecessary files (like .git, virtual environments, logs, etc.) from the build context.
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.env
+.venv/
+venv/
+Pipfile
+Pipfile.lock
+
+# Environment / config
+.env
+.env.*
+
+# Byte-compiled / cache
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git / CI
+.git/
+.gitignore
+.gitattributes
+Jenkinsfile
+
+# Logs
+*.log
+
+# Kubernetes / Compose files (optional)
+docker-compose.yml
+k8s/
