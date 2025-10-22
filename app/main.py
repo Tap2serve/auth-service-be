@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="Auth Service")
+app = FastAPI(title="Auth Service",
+    root_path="/auth")
 
 @app.get("/health")
 def health():
