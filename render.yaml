@@ -4,8 +4,6 @@ services:
     env: docker
     branch: main
     dockerfilePath: ./Dockerfile
-    buildCommand: pip install --no-cache-dir -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 8001
     healthCheckPath: /auth/health
     autoDeploy: true
     envVars:
