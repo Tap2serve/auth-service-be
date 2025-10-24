@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tap2serve-auth-service
+    env: docker
+    branch: main
+    dockerfilePath: ./Dockerfile
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 8001
+    healthCheckPath: /auth/health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "8001"
