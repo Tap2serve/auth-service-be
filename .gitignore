@@ -53,5 +53,5 @@ Jenkinsfile
 *.log
 
 # Kubernetes / Compose files (optional)
-docker-compose.yml
+# docker-compose.yml
 k8s/
