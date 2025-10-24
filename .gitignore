@@ -47,7 +47,7 @@ Thumbs.db
 # Git / CI
 .git/
 .gitattributes
-Jenkinsfile
+# Jenkinsfile
 
 # Logs
 *.log
