@@ -67,14 +67,14 @@ pipeline {
         stage("Docker Build"){
             steps {
                 script {
-                    docker_build("auth-service","latest", "${DOCKERHUB_USERNAME}")
+                    docker_build("auth-service","latest", "aniketsinare")
                 }
             }
         }
         stage("Docker Push"){
             steps {
                 script {
-                    docker_push("auth-service","latest", "${DOCKERHUB_USERNAME}")
+                    docker_push("auth-service","latest", "aniketsinare")
                 }
             }
         }
